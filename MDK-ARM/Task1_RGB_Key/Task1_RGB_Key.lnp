@@ -1,0 +1,25 @@
+--cpu Cortex-M3
+"task1_rgb_key\startup_stm32f103xb.o"
+"task1_rgb_key\main.o"
+"task1_rgb_key\gpio.o"
+"task1_rgb_key\tim.o"
+"task1_rgb_key\stm32f1xx_it.o"
+"task1_rgb_key\stm32f1xx_hal_msp.o"
+"task1_rgb_key\stm32f1xx_hal_gpio_ex.o"
+"task1_rgb_key\stm32f1xx_hal_tim.o"
+"task1_rgb_key\stm32f1xx_hal_tim_ex.o"
+"task1_rgb_key\stm32f1xx_hal.o"
+"task1_rgb_key\stm32f1xx_hal_rcc.o"
+"task1_rgb_key\stm32f1xx_hal_rcc_ex.o"
+"task1_rgb_key\stm32f1xx_hal_gpio.o"
+"task1_rgb_key\stm32f1xx_hal_dma.o"
+"task1_rgb_key\stm32f1xx_hal_cortex.o"
+"task1_rgb_key\stm32f1xx_hal_pwr.o"
+"task1_rgb_key\stm32f1xx_hal_flash.o"
+"task1_rgb_key\stm32f1xx_hal_flash_ex.o"
+"task1_rgb_key\stm32f1xx_hal_exti.o"
+"task1_rgb_key\system_stm32f1xx.o"
+--strict --scatter "Task1_RGB_Key\Task1_RGB_Key.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "Task1_RGB_Key.map" -o Task1_RGB_Key\Task1_RGB_Key.axf
